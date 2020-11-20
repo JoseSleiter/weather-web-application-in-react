@@ -1,8 +1,104 @@
-.App {
-  text-align: center;
+body, #root, .App, .App > #home,  .App > #home > div{
+  /* height: 100%; */
+  box-sizing: border-box;
+}
+.background__img{
+  background: url('./assets//img/home-wheater.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  max-height: 1000px;
+  width: 100%;
+  filter: blur(1px);
 }
 
-.App-logo {
+.content__login{    display: flex;
+  justify-content: center;
+}
+.ant-drawer-content-wrapper{
+  max-width: 100%;
+}
+.circule-brd{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1; }
+  .container:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+
+body{
+  /* background: #1e202b !important; */
+}
+
+.container__search{
+  background: url('./assets/img/banner.png');
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.home__page div.section__find__location{
+  margin-bottom: 3rem;
+}
+.home__page div.section__find__location .input--search{
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+}
+
+.home__page div.section__weather{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  background: #323544;
+  color: white;
+  margin-top: -100px;
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .home__page div.section__weather {
+    grid-template-columns: repeat(1, auto);
+ } }
+.home__page div.section__weather--item .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-weight: 400;
+}
+.home__page div.section__weather--item .info{
+  padding: 15px;
+}
+.home__page .section__weather--item .info .info--temp{
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home__page div.section__weather--item.item-card:nth-child(even) {
+  background-color: #262936; 
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +131,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
